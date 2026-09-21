@@ -49,18 +49,18 @@ async def automatic_cleanup_loop():
         finally:
             db.close()
 
-        # Wait 1 hour before checking again
+        # Check once every hour
         await asyncio.sleep(3600)
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """
-    Start automatic cleanup when FastAPI starts.
-    Stop it cleanly when FastAPI shuts down.
+    Start automatic cleanup when FastAPI starts
+    and stop it cleanly when FastAPI shuts down.
     """
 
-    # Run cleanup once immediately at startup
+    # Run cleanup once on startup
     db = SessionLocal()
 
     try:
