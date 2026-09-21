@@ -1,27 +1,49 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*$py.class
+
+.pytest_cache/
+.coverage
+
+.venv/
+env/
+venv/
+backend/venv/
+
+# =========================
 # Frontend / Next.js
+# =========================
 node_modules/
 .next/
 out/
 
+# =========================
 # Environment files
+# =========================
 .env
 .env.local
 backend/.env
 
-# Python backend
-backend/venv/
-**/__pycache__/
-*.pyc
-*.pyo
-
+# =========================
 # Backend test images
+# =========================
 backend/test-water.png
 backend/returned-water.png
 backend/admin-water.png
 
+# =========================
 # Logs
+# =========================
 *.log
 
+# =========================
 # OS / Editor
+# =========================
 .DS_Store
 .vscode/
