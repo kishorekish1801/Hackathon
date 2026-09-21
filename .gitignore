@@ -1,0 +1,24 @@
+# Python virtual environment
+backend/venv/
+
+# Secrets / environment files
+backend/.env
+.env
+.env.local
+
+# Python cache
+**/__pycache__/
+*.pyc
+*.pyo
+
+# Test images
+backend/test-water.png
+backend/returned-water.png
+backend/admin-water.png
+
+# Logs
+*.log
+
+# OS/editor files
+.DS_Store
+.vscode/
